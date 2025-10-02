@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Message For You</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* A more refined, romantic gradient background */
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(170deg, #fff1f2, #e9d5ff);
+        }
+        .font-title {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        /* Adds a subtle shadow to the main title to make it pop */
+        .title-shadow {
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /*
+          Animation Styling
+          - The 'in-view' class is added by JavaScript to trigger the animation.
+        */
+        .timeline-card {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            transition-delay: 0.2s; /* Add a slight delay */
+        }
+
+        .timeline-card.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Styling for the sticky navigation and active link */
+        .nav-link.active {
+            color: #ec4899; /* Pink-500 */
+            font-weight: 600;
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Sticky Navbar -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-lg shadow-md">
+        <div class="w-full max-w-5xl mx-auto px-4">
+            <div class="flex justify-center items-center h-16 space-x-4 sm:space-x-8">
+                <a href="#beginning" class="nav-link text-gray-600 hover:text-pink-500 text-sm sm:text-base">The Beginning</a>
+                <a href="#deepening" class="nav-link text-gray-600 hover:text-pink-500 text-sm sm:text-base">The Deepening</a>
+                <a href="#hard-times" class="nav-link text-gray-600 hover:text-pink-500 text-sm sm:text-base">The Hard Times</a>
+                <a href="#the-end" class="nav-link text-gray-600 hover:text-pink-500 text-sm sm:text-base">The End?</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="w-full max-w-3xl mx-auto py-12 px-4">
+        <!-- Header Section -->
+        <header class="text-center mb-16">
+            <h1 class="font-title text-4xl md:text-5xl font-bold text-pink-600 mb-4 title-shadow">Our Story...</h1>
+            <p class="text-md md:text-lg text-gray-600 max-w-2xl mx-auto">
+                I don't always know how to find the right words, but code has become the only way I can truly show you what’s in my heart. This is our story, as I remember it.
+            </p>
+        </header>
+
+        <!-- Main content with memories -->
+        <main class="space-y-16">
+
+            <!-- Section 1: The Beginning -->
+            <section id="beginning">
+                <h2 class="font-title text-3xl text-center mb-8 text-pink-500">The Beginning</h2>
+                <!-- Memory 1 -->
+                <div class="timeline-card has-image bg-white shadow-2xl rounded-2xl flex flex-col md:flex-row overflow-hidden mb-16">
+                    <div class="md:w-5/12 flex-shrink-0"><img src="our photos/IMG-20251001-WA0023.jpg" alt="The day it all started" class="w-full h-64 md:h-full object-cover"></div>
+                    <div class="p-6 md:p-8 flex flex-col justify-center">
+                        <h3 class="font-title text-2xl font-bold text-gray-900 mb-3">October 1, 2024</h3>
+                        <p class="text-gray-700 leading-relaxed">It all started the day you came to me, wanting to talk after leaving him. Something felt profoundly different. In that moment, I knew if I ever let you go again, I would never forgive myself.</p>
+                    </div>
+                </div>
+                <!-- Memory 2 -->
+                <div class="timeline-card has-image bg-white shadow-2xl rounded-2xl flex flex-col md:flex-row-reverse overflow-hidden mb-16">
+                    <div class="md:w-5/12 flex-shrink-0"><img src="our photos/IMG-20251001-WA0025.jpg" alt="A screenshot from Omar's chat" class="w-full h-64 md:h-full object-cover"></div>
+                    <div class="p-6 md:p-8 flex flex-col justify-center">
+                        <h3 class="font-title text-2xl font-bold text-gray-900 mb-3">October 4, 2024</h3>
+                        <p class="text-gray-700 leading-relaxed">You said, "let's do it," and for three months, you made me the happiest person alive. I was falling for you so hard. I can still feel the ache in my chest when I think about it... I miss you so much.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Section 2: The Deepening -->
+            <section id="deepening">
+                 <h2 class="font-title text-3xl text-center mb-8 text-pink-500">The Deepening</h2>
+                <!-- Memory 3 -->
+                <div class="timeline-card has-image bg-white shadow-2xl rounded-2xl flex flex-col md:flex-row overflow-hidden mb-16">
+                    <div class="md:w-5/12 flex-shrink-0"><img src="our photos/IMG-20251001-WA0028.jpg" alt="Our first video call" class="w-full h-64 md:h-full object-cover"></div>
+                    <div class="p-6 md:p-8 flex flex-col justify-center">
+                        <h3 class="font-title text-2xl font-bold text-gray-900 mb-3">October 13, 2024</h3>
+                        <p class="text-gray-700 leading-relaxed">Our first video call. You did a "get ready with me," and you looked like an angel. I swear, I will never feel that way about anyone else for the rest of my life.</p>
+                    </div>
+                </div>
+                <!-- Memory 5 (Text Only) -->
+                <div class="timeline-card bg-white shadow-2xl rounded-2xl overflow-hidden mb-16">
+                    <div class="p-8 md:p-10 text-center">
+                        <h3 class="font-title text-2xl font-bold text-gray-900 mb-3">October 18, 2024</h3>
+                        <p class="text-gray-700 leading-relaxed">"El Hafla." The day was a mess, and I was a dick, but all I wanted was to be with you. And we ended up together, like always. When you were exhausted and rested your head on my shoulder... that was everything. Touching your hand for the first time... I was the happiest man in the world.</p>
+                    </div>
+                </div>
+                 <!-- Memory 6 -->
+                <div class="timeline-card has-image bg-white shadow-2xl rounded-2xl flex flex-col md:flex-row-reverse overflow-hidden mb-16">
+                    <div class="md:w-5/12 flex-shrink-0"><img src="our photos/IMG-20251001-WA0021.jpg" alt="Our first date" class="w-full h-64 md:h-full object-cover"></div>
+                    <div class="p-6 md:p-8 flex flex-col justify-center">
+                        <h3 class="font-title text-2xl font-bold text-gray-900 mb-3">October 25, 2024</h3>
+                        <p class="text-gray-700 leading-relaxed">Our first date. You were, and always will be, the prettiest girl I’ve ever seen. And our first kiss... I would do anything for just one more from you. Only you.</p>
+                    </div>
+                </div>
+                 <!-- Memory 7 -->
+                <div class="timeline-card has-image bg-white shadow-2xl rounded-2xl flex flex-col md:flex-row overflow-hidden mb-16">
+                    <div class="md:w-5/12 flex-shrink-0"><img src="our photos/IMG-20251001-WA0020.jpg" alt="The look in your eyes" class="w-full h-64 md:h-full object-cover"></div>
+                    <div class="p-6 md:p-8 flex flex-col justify-center">
+                        <h3 class="font-title text-2xl font-bold text-gray-900 mb-3">The Eyes Chico...</h3>
+                        <p class="text-gray-700 leading-relaxed">I can't forget the way you looked at me. Your eyes told stories of how much you needed me, and I was the happiest man on earth to be there for you. How can I ever forget that? Tell me.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: The Hard Times -->
+            <section id="hard-times">
+                <h2 class="font-title text-3xl text-center mb-8 text-pink-500">The Hard Times</h2>
+                <!-- Memory 3 -->
+                <div class="timeline-card has-image bg-white shadow-2xl rounded-2xl flex flex-col md:flex-row-reverse overflow-hidden mb-16">
+                    <div class="md:w-5/12 flex-shrink-0"><img src="our photos/IMG-20251001-WA0026.jpg" alt="A heartfelt conversation" class="w-full h-64 md:h-full object-cover"></div>
+                    <div class="p-6 md:p-8 flex flex-col justify-center">
+                        <h3 class="font-title text-2xl font-bold text-gray-900 mb-3">October 11, 2024</h3>
+                        <p class="text-gray-700 leading-relaxed">We fought because of that guy who texted you. My jealousy was overwhelming. You asked if I wanted to leave, and I couldn't answer. Then I woke up to those texts... I'll never forget them.</p>
+                    </div>
+                </div>
+                 <!-- Memory 8 -->
+                <div class="timeline-card has-image bg-white shadow-2xl rounded-2xl flex flex-col md:flex-row overflow-hidden mb-16">
+                    <div class="md:w-5/12 flex-shrink-0"><img src="our photos/IMG-20251001-WA0030.jpg" alt="A message to feel safe" class="w-full h-64 md:h-full object-cover"></div>
+                    <div class="p-6 md:p-8 flex flex-col justify-center">
+                        <h3 class="font-title text-2xl font-bold text-gray-900 mb-3">November 7, 2024</h3>
+                        <p class="text-gray-700 leading-relaxed">I don't even remember why we fought, but I sent you that message because all I ever wanted was to make you feel safe. I never wanted to be the guy you think I am now.</p>
+                    </div>
+                </div>
+                <!-- Memory 9 -->
+                <div class="timeline-card has-image bg-white shadow-2xl rounded-2xl flex flex-col md:flex-row-reverse overflow-hidden mb-16">
+                    <div class="md:w-5/12 flex-shrink-0"><img src="our photos/WhatsApp Image 2025-10-02 at 21.46.48_49afaa5e.jpg" alt="A difficult conversation" class="w-full h-64 md:h-full object-cover"></div>
+                    <div class="p-6 md:p-8 flex flex-col justify-center">
+                        <h3 class="font-title text-2xl font-bold text-gray-900 mb-3">November 16, 2024</h3>
+                        <p class="text-gray-700 leading-relaxed">The fight about Hla. I cut her off instantly, because nothing and no one has ever mattered more than you. Why couldn't you see how much I loved you? She's still trying to get with me, but I only want you.</p>
+                    </div>
+                </div>
+                 <!-- Memory 10 -->
+                <div class="timeline-card has-image bg-white shadow-2xl rounded-2xl flex flex-col md:flex-row overflow-hidden mb-16">
+                    <div class="md:w-5/12 flex-shrink-0"><img src="our photos/WhatsApp Image 2025-10-02 at 21.53.33_126b16de.jpg" alt="Making up after a fight" class="w-full h-64 md:h-full object-cover"></div>
+                    <div class="p-6 md:p-8 flex flex-col justify-center">
+                        <h3 class="font-title text-2xl font-bold text-gray-900 mb-3">November 29, 2024</h3>
+                        <p class="text-gray-700 leading-relaxed">I stupidly left you on delivered for hours and we fought. I sent you that picture just to see your reaction... and it worked. God, I miss us.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Section 4: The End? -->
+            <section id="the-end">
+                 <h2 class="font-title text-3xl text-center mb-8 text-pink-500">The Best Day & The End?</h2>
+                <!-- Memory 11 -->
+                <div class="timeline-card has-image bg-white shadow-2xl rounded-2xl flex flex-col md:flex-row-reverse overflow-hidden mb-16">
+                    <div class="md:w-5/12 flex-shrink-0"><img src="our photos/IMG-20251001-WA0018.jpg" alt="Birthday memory" class="w-full h-64 md:h-full object-cover"></div>
+                    <div class="p-6 md:p-8 flex flex-col justify-center">
+                        <h3 class="font-title text-2xl font-bold text-gray-900 mb-3">December 4, 2024</h3>
+                        <p class="text-gray-700 leading-relaxed">MY BIRTHDAY. The single greatest memory of my entire life. I remember every detail, every second. I could never have asked for more.</p>
+                    </div>
+                </div>
+                 <!-- Memory 12 -->
+                <div class="timeline-card has-image bg-white shadow-2xl rounded-2xl flex flex-col md:flex-row overflow-hidden mb-16">
+                    <div class="md:w-5/12 flex-shrink-0"><img src="our photos/IMG-20251001-WA0027.jpg" alt="A beautiful memory" class="w-full h-64 md:h-full object-cover"></div>
+                    <div class="p-6 md:p-8 flex flex-col justify-center">
+                        <h3 class="font-title text-2xl font-bold text-gray-900 mb-3">December 4, 2024</h3>
+                        <p class="text-gray-700 leading-relaxed">Just look at how beautiful you were that day. I miss you so much, for real.</p>
+                    </div>
+                </div>
+                 <!-- Final Memory -->
+                <div class="timeline-card bg-white shadow-2xl rounded-2xl overflow-hidden mb-16">
+                    <div class="p-8 md:p-10 text-center">
+                        <h3 class="font-title text-2xl font-bold text-gray-900 mb-3">December 31, 2024</h3>
+                        <p class="text-gray-700 leading-relaxed">When the dream ended. It was one of the most painful things I've ever experienced, and my mind still refuses to accept it. Maybe in another lifetime, we'll find our way back to each other. Who knows?</p>
+                    </div>
+                </div>
+                 <!-- One Last Question -->
+                <div class="timeline-card bg-gradient-to-r from-pink-500 to-rose-500 text-white shadow-2xl rounded-2xl overflow-hidden">
+                    <div class="p-8 md:p-10 text-center">
+                        <p class="text-xl md:text-2xl leading-relaxed font-semibold">Is it possible to meet in the middle for one last try? Maybe this is the only way I can confess that I never lost passion, and I still believe we can find our way back together.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.timeline-card');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section');
+
+            // --- Scroll Animation for Cards ---
+            const cardObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        cardObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            cards.forEach(card => cardObserver.observe(card));
+
+            // --- Active Nav Link Highlighting ---
+            const sectionObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        navLinks.forEach(link => {
+                            link.classList.toggle('active', link.getAttribute('href').includes(entry.target.id));
+                        });
+                    }
+                });
+            }, { rootMargin: '-50% 0px -50% 0px' }); // Highlights when section is in the middle of the screen
+            sections.forEach(section => sectionObserver.observe(section));
+        });
+    </script>
+
+</body>
+</html>
+
